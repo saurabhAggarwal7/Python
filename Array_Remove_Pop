@@ -1,0 +1,26 @@
+import array
+
+arr = array.array('i', [1, 2, 3, 7, 7, 6, 7])
+print("print array", end="")
+
+for i in range(0, 7):
+    print(arr[i], end="")
+print("\r")
+
+# using pop() to remove element at 2nd position
+arr.pop(2)
+
+for i in range(0, 6):
+    print(arr[i], end="")
+print("\r")
+
+# using remove() to remove 1st occurrence of 7 from multiple 7's
+arr.remove(7)
+
+for i in range(0, 5):
+    print(arr[i], end="")
+
+# output
+# print array1237767
+# 127767
+# 12767
