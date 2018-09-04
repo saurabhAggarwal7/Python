@@ -1,1 +1,35 @@
 
+# Function to rotate to left arr[] of size n vy rotations defined by d::
+
+#Function-1 to rotate by 1
+def left_rotate_array_one(arr, n):
+    temp = arr[0]
+    for i in range(n-1):
+        arr[i] = arr[i+1]
+    arr[n-1] = temp
+
+#Function-2 to rotate by user defined wish which is called in driver method
+def left_rotate_array(arr, rotate_by, n):
+    for i in range(rotate_by):
+        left_rotate_array_one(arr, n)
+
+#Function-3 to print array being rotated.
+def print_Array(arr, n):
+    for i in range(n):
+        print("%d" % arr[i], end=" ")
+
+#driver method::
+arr = [1, 2, 3, 4, 5, 6, 7]
+n = len(arr)
+rotate_by = 2
+
+#call method to rotate by 2, left rotataions
+left_rotate_array(arr, rotate_by, n)
+
+#print the rotated array
+print_Array(arr, n)
+
+
+
+#output
+#3 4 5 6 7 1 2
