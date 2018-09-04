@@ -32,3 +32,9 @@ print("\r")
 print("The array after insertion is : ", end="")
 for i in range(0, 5):
     print(arr[i], end=" ")
+  
+#Output:
+#The newly created array is:123
+#The appended array is : 1 2 3 4 
+#The array after insertion is : 1 2 5 3 4 
+#Process finished with exit code 0
