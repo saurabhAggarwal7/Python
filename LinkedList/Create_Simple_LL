@@ -11,13 +11,12 @@ class LinkedList:
 if __name__ == "__main__":
 
     linkedLst = LinkedList()
-    first = linkedLst.head
 
-    first = Node(1)
+    linkedLst.head = Node(1)
     second= Node(2)
     third = Node(3)
 
-    first.next = second
+    linkedLst.head.next = second
     second.next = third
 
 
