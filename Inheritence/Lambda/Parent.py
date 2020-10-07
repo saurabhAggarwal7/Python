@@ -1,4 +1,4 @@
-class Parent(object):
+class ParentClass(object):
     def __init__(self, **kwargs):
         self.owner = kwargs.get('owner')
         
