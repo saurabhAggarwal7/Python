@@ -1,4 +1,6 @@
-class Child(git.Parent):
+import Parent
+
+class Child(Parent.ParentClass):
 
     #Pass on Keyword arguments to parent class GitAPP
     def __init__(self, **kwargs):
